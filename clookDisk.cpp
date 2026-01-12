@@ -20,7 +20,7 @@ int main(){
             total += abs(head - right[i]);
             head = right[i];
         }
-        for(int i=left.size()-1;i>=0;i--){
+        for(int i=0;i<left.size();i++){
             total += abs(head - left[i]);
             head = left[i];
         }
@@ -30,7 +30,7 @@ int main(){
             total += abs(head - left[i]);
             head = left[i];
         }
-        for(int i=0;i<right.size();i++){
+        for(int i=right.size()-1;i>=0;i--){
             total += abs(head - right[i]);
             head = right[i];
         }
